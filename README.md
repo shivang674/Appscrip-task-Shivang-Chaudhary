@@ -1,4 +1,4 @@
-# Appscrip PLP Assignment
+# Appscrip Assignment
 
 This is a Product Listing Page (PLP) implementation for the Appscrip assignment. It mimics the "mettā muse" design using Next.js (App Router) and plain CSS Modules.
 
@@ -53,4 +53,4 @@ This is a Product Listing Page (PLP) implementation for the Appscrip assignment.
 
 ## Deployment
 
-The project is ready to be deployed on Vercel or Netlify.
+The project is deployed on Netlify - https://appscrip-assignment-shivang-chaudhary.netlify.app
