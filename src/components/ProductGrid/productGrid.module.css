@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1.5rem;
+    /* Slightly reduced gap for better fit */
+    width: 100%;
+}
+
+/* Remove desktop/tablet specific column counts as auto-fill handles it. 
+   Keep mobile adjust if 230px is too wide for very small screens */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Force 2 cols on mobile if possible, or 1 */
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

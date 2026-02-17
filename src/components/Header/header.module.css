@@ -1,0 +1,92 @@
+.header {
+    border-bottom: 1px solid var(--color-gray-200);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background: var(--color-white);
+    z-index: 100;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.logoCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoText {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.mobileMenu {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-left: auto;
+    /* Pushes to the right */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.navList {
+    display: flex;
+    gap: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .navList {
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+}
+
+.navLink {
+    text-transform: uppercase;
+}
+
+.hideMobile {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+    }
+
+    .logoText {
+        font-size: 24px;
+        /* On mobile, logo might not be centered depending on design, but let's keep it centered or move it */
+    }
+
+    .hideMobile {
+        display: none !important;
+    }
+}

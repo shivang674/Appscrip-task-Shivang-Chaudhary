@@ -1,0 +1,70 @@
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.category {
+    border-bottom: 1px solid var(--color-gray-200);
+    padding: 1rem 0;
+}
+
+.categoryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.categoryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filterOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-gray-500);
+    cursor: pointer;
+}
+
+.filterOption input {
+    cursor: pointer;
+}
+
+.mobileHeader {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+@media (max-width: 768px) {
+    .mobileHeader {
+        display: flex;
+    }
+}

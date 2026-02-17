@@ -1,0 +1,50 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.sidebarWrapper {
+    /* transition: all 0.3s ease; */
+    /* Removed transition for debugging */
+    /* overflow: hidden; */
+    /* Removed overflow for debugging */
+    height: 100%;
+    /* Important for equal height if needed */
+}
+
+.gridWrapper {
+    flex: 1;
+    min-width: 0;
+    /* Prevents overflow in flex container */
+}
+
+@media (max-width: 768px) {
+    .sidebarWrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        /* Use 100% instead of vh to avoid mobile browser bar issues */
+        background: white;
+        z-index: 9999;
+        /* Ensure it's on top of everything */
+        padding: 20px;
+        overflow-y: auto;
+        display: block;
+        /* Force block */
+    }
+
+    /* Need a way to close logic in visual, but for now this ensures it doesn't break layout */
+}
