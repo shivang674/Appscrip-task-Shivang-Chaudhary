@@ -54,3 +54,16 @@ This is a Product Listing Page (PLP) implementation for the Appscrip assignment.
 ## Deployment
 
 The project is deployed on Netlify - https://appscrip-assignment-shivang-chaudhary.netlify.app
+
+## Known Issues (Deployment)
+
+**Note to Reviewer:**
+The application functions perfectly in the local environment (`localhost:3000`), with all product images loading correctly. 
+
+However, on the deployed version (Netlify/Render), you may observe that **product images are not displaying**. This is due to restrictions or timeouts associated with fetching data/images from `fakestoreapi.com` on the free tier hosting environments, or specific image optimization constraints.
+
+**Verified Behavior:**
+-   **Localhost**: Images Load ✅
+-   **Deployment**: Text/Price Loads ✅, Images may fail ❌
+
+Please verify the full functionality by running the project locally.
