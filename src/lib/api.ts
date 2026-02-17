@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { Product } from './types';
 
 export async function fetchProducts(): Promise<Product[]> {
