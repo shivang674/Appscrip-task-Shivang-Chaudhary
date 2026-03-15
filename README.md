@@ -66,4 +66,4 @@ However, on the deployed version (Netlify/Render), you may observe that **produc
 -   **Localhost**: Images Load ✅
 -   **Deployment**: Text/Price Loads ✅, Images may fail ❌
 
-Please verify the full functionality by running the project locally.
+Please verify the full functionality by running the project locally
